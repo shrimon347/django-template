@@ -1,0 +1,29 @@
+<div class="w-full bg-gray-800 text-white p-4 flex flex-col">
+  <!-- Brand Name -->
+  <h2 class="text-3xl font-bold mb-6 text-blue-400">SalamCenter</h2>
+
+  <!-- Navigation -->
+  <nav class="flex-1">
+      <ul class="space-y-3">
+          <li>
+              <a href="{% url 'dashboard' %}" class="flex items-center gap-3 py-3 px-4 rounded-lg hover:bg-gray-700 transition">
+                  <span class="text-xl">🏠</span> <!-- Home Icon -->
+                  <span class="text-lg font-medium">Home</span>
+              </a>
+          </li>
+          <li>
+              <a href="{% url 'prayer' %}" class="flex items-center gap-3 py-3 px-4 rounded-lg hover:bg-gray-700 transition">
+                  <span class="text-xl">🕌</span> <!-- Prayer Icon -->
+                  <span class="text-lg font-medium">Prayers</span>
+              </a>
+          </li>
+          <li>
+              <a href="#" class="flex items-center gap-3 py-3 px-4 rounded-lg hover:bg-gray-700 transition">
+                  <span class="text-xl">⚙️</span> <!-- Settings Icon -->
+                  <span class="text-lg font-medium">Settings</span>
+              </a>
+          </li>
+      </ul>
+  </nav>
+
+</div>

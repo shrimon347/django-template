@@ -1,0 +1,45 @@
+<div class="bg-green-600 shadow-md p-4 flex justify-between items-center">
+  <!-- Mobile Menu Button -->
+  <button
+    onclick="toggleSidebar()"
+    class="md:hidden bg-gray-800 text-white p-2 rounded focus:outline-none"
+  >
+    ☰
+  </button>
+
+  <!-- Navigation Links -->
+  <div class="hidden md:flex gap-6">
+    <a
+      href="{% url 'dashboard' %}"
+      class="text-lg font-semibold text-white hover:text-green-900 transition"
+    >
+      Dashboard
+    </a>
+    <a
+      href="#"
+      class="text-lg font-semibold text-white hover:text-green-900 transition"
+    >
+      Ramadan
+    </a>
+    <a
+      href="{% url 'prayer' %}"
+      class="text-lg font-semibold text-white hover:text-green-900 transition"
+    >
+      Prayer
+    </a>
+    <a
+      href="#"
+      class="text-lg font-semibold text-white hover:text-green-900 transition"
+    >
+      About
+    </a>
+  </div>
+
+  <!-- Logout Button -->
+  <a
+    href="#"
+    class="bg-gray-800 text-white px-5 py-2 rounded-lg font-medium shadow transition"
+  >
+    Logout
+  </a>
+</div>
